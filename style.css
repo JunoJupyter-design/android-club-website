@@ -383,6 +383,8 @@ section {
   background: linear-gradient(90deg, #fff, #b0c4de, #fff);
   background-size: 200% auto;
   -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: text-shine 5s linear infinite;
   text-shadow: 0 0 20px rgba(255,255,255,0.1);
