@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the official website of the Android Club.">
+    <title>Android Club</title>
+
+    <!-- Stylesheets & Fonts -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- ========================= -->
+    <!-- Header & Navigation       -->
+    <!-- ========================= -->
+    <header class="header">
+        <nav class="nav container">
+            <!-- Logo / Brand -->
+            <a href="#welcome" class="nav__brand">
+                <img src="Image.png" alt="Android Club Logo" class="nav__logo-img">
+                <span class="nav__logo-text">Android Club</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <input type="checkbox" id="nav-toggle" class="nav__toggle">
+            <label for="nav-toggle" class="nav__toggle-label"><span></span></label>
+
+            <!-- Navigation Menu -->
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#learn" class="nav__link">What You'll Learn</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#events" class="nav__link">Events</a></li>
+                </ul>
+                <div class="nav__actions">
+                    <a href="#" class="btn btn--secondary">Login</a>
+                    <a href="#" class="btn btn--secondary">Sign In</a>
+                    <a href="#contact" class="btn btn--primary">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ========================= -->
+        <!-- Welcome Section           -->
+        <!-- ========================= -->
+        <section class="welcome" id="welcome">
+            <div class="welcome__content">
+                <h1 class="welcome__title">Welcome to Android Club</h1>
+                <p class="welcome__subtitle">Debugging Limits, Deploying Dreams.</p>
+                <a href="#contact" class="btn btn--cta">Join The Club!</a>
+            </div>
+        </section>
+
+        <!-- ========================= -->
+        <!-- About Section             -->
+        <!-- ========================= -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section__title">What We Do 💡</h2>
+                <p class="section__description">
+                    <!-- Placeholder Text: Ready for your content -->
+                    This is the place to describe your club's mission. Talk about the community, the learning environment, and what makes your club the best place for aspiring Android developers on campus.
+                </p>
+            </div>
+        </section>
+
+        <!-- ========================= -->
+        <!-- Learn Section             -->
+        <!-- ========================= -->
+        <section class="learn" id="learn">
+            <div class="container">
+                <h2 class="section__title">What You'll Learn 🧑‍💻</h2>
+                <div class="grid grid--3-cols">
+                    <div class="feature-card">
+                        <i class="fas fa-code feature-card__icon"></i>
+                        <h3 class="feature-card__title">Kotlin & Java</h3>
+                        <p>Master the core languages of Android development.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt feature-card__icon"></i>
+                        <h3 class="feature-card__title">Modern UI/UX</h3>
+                        <p>Build beautiful interfaces with Jetpack Compose.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-database feature-card__icon"></i>
+                        <h3 class="feature-card__title">Backend & APIs</h3>
+                        <p>Connect your apps to servers and databases.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================= -->
+        <!-- Projects Section          -->
+        <!-- ========================= -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="section__title">Our Cool Projects 🚀</h2>
+                <div class="grid grid--3-cols">
+                    <article class="project-card">
+                        <img src="https://via.placeholder.com/400x250/FFC107/0D1B2A?text=Campus+Navigator" alt="Campus Navigator Project" class="project-card__img">
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Campus Navigator</h3>
+                            <p>An app to help new students find their way around campus with an interactive map and event schedules.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img src="https://via.placeholder.com/400x250/00B4D8/FFFFFF?text=TaskMaster" alt="TaskMaster Project" class="project-card__img">
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">TaskMaster</h3>
+                            <p>A sleek and simple to-do list app to keep your daily tasks organized and boost productivity.</p>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <img src="https://via.placeholder.com/400x250/1B263B/FFFFFF?text=QuizUp" alt="QuizUp Project" class="project-card__img">
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">QuizUp</h3>
+                            <p>A fun quiz app built to help students prepare for exams with customizable question sets.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================= -->
+        <!-- Events Section            -->
+        <!-- ========================= -->
+        <section class="events" id="events">
+            <div class="container">
+                <h2 class="section__title">Events & Workshops 🗓️</h2>
+                <ul class="event-list">
+                    <li class="event-list__item"><strong>Intro to Kotlin Workshop:</strong> Learn the basics of the official language for Android development. (Past)</li>
+                    <li class="event-list__item"><strong>UI/UX Design with Figma:</strong> A hands-on session on designing beautiful app interfaces. (Past)</li>
+                    <li class="event-list__item"><strong>Upcoming: App Showcase Day!</strong> Members will present the amazing apps they've built this semester. (Sep 25, 2025)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ========================= -->
+        <!-- Contact Section           -->
+        <!-- ========================= -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section__title">Get In Touch 👋</h2>
+                <p class="section__description">
+                    <!-- Placeholder Text: Ready for your content -->
+                    Have questions or want to join? We'd love to hear from you. Reach out through our social channels below.
+                </p>
+                <div class="contact__social-links">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================= -->
+    <!-- Footer                    -->
+    <!-- ========================= -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Android Club. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
